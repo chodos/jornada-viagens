@@ -12,11 +12,11 @@ header {
   height: 64px;
   display: inline-block;
 }
-nav {
-  display: none;
-}
 .navigation-menu {
   margin-top: 24px;
+}
+.navigation-menu nav {
+  display: none;
 }
 input[type="checkbox"]:checked ~ nav {
   position: absolute;
@@ -35,4 +35,27 @@ input[type="checkbox"]:checked ~ nav {
 .navigation-menu a {
   color: var(--text-secondary-color);
   text-decoration: none;
+  font-weight: var(--menu-text-weight);
+  font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation-menu {
+    margin-top: 0;
+    width: 75%;
+  }
+  .navigation-menu label {
+    display: none;
+  }
+  .navigation-menu nav {
+    display: block;
+  }
+  .navigation-menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navigation-menu li {
+    margin-left: 0;
+  }
 }
