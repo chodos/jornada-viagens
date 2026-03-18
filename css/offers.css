@@ -1,3 +1,12 @@
+.offers-cards {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
 .card {
   color: var(--text-secondary-color);
   width: 312px;
@@ -31,9 +40,17 @@
   display: block;
 }
 
+.card.japao {
+  background-image: url("../img/tokyo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 @media screen and (min-width: 1024px) {
   .card {
-    width: 588px;
+    width: calc(50% - 48px);
+    max-width: 588px;
     height: 308px;
   }
   .card header h3 {
