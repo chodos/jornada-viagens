@@ -1,0 +1,33 @@
+.categories-cards {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1250px;
+  margin: 64px auto 0;
+}
+.categories-cards .card {
+  width: 312px;
+  height: 220px;
+  padding: 24px 16px;
+  border-radius: 8px;
+  background-color: var(--backgorund-secondary-color);
+  color: var(--text-primary-color);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.categories-cards .card h3 {
+  font-size: 28px;
+  font-weight: var(--title-weight);
+  margin: 24px 0 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .categories-cards .card {
+    width: calc(25% - 30px);
+    max-width: 281px;
+  }
+}
