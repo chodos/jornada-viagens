@@ -54,6 +54,7 @@ body {
   background-color: var(--secondary-color);
   border-radius: 16px;
   text-decoration: none;
+  text-align: center;
   display: inline-block;
   line-height: 64px;
 }
