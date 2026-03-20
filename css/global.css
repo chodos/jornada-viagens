@@ -32,6 +32,13 @@ body {
   color: var(--text-primary-color);
 }
 
+section {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+section.hero {
+  max-width: none;
+}
 .section-title h2 {
   font-size: 28px;
   font-weight: var(--title-weight);
