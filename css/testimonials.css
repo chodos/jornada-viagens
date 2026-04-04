@@ -1,0 +1,23 @@
+.testimonials {
+  margin-top: 40px;
+  padding: 0 40px;
+}
+.testimonials-container {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.testimonials-container footer {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.testimonials-container article {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .testimonials-container article {
+    width: calc(33.3% - 22px);
+  }
+}
